@@ -1,4 +1,4 @@
-package ro.ubb.h1;
+package ui;
 
 public class Main {
     public static void main(String[] args) {
