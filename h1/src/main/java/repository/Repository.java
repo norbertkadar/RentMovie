@@ -1,6 +1,6 @@
 package repository;
 
-public interface Repository {
+public interface Repository <T> {
 
 
 
@@ -17,12 +17,12 @@ public interface Repository {
          * @return a {@code Student}  with the given id.
          * @throws IllegalArgumentException if the given id is null.
          */
-        Student findOne(Long id);
+        T findOne(Long id);
 
         /**
          * @return all entities.
          */
-        Iterable<Student> findAll();
+        Iterable<T> findAll();
 
         /**
          * Saves the given entity.
@@ -31,16 +31,16 @@ public interface Repository {
          * @return a {@code Student} - null if the entity was saved otherwise (e.g. id already exists) returns the entity.
          * @throws IllegalArgumentException if the given entity is null.
          */
-        Student save(Student entity);
+        T save(T entity);
 
         /**
          * Removes the entity with the given id.
          *
          * @param id must not be null.
-         * @return a {@code Student} - null if there is no entity with the given id, otherwise the removed entity.
+         * @return a {@code} - null if there is no entity with the given id, otherwise the removed entity.
          * @throws IllegalArgumentException if the given id is null.
          */
-        Student delete(Long id);
+        T delete(Long id);
 
         /**
          * Updates the given entity.
@@ -50,10 +50,10 @@ public interface Repository {
          * entity.
          * @throws IllegalArgumentException if the given entity is null.
          */
-        Student update(Student entity);
+        T update(T entity);
     }
 
 
 
-}
+
 
