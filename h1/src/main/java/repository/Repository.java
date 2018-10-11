@@ -1,6 +1,8 @@
 package repository;
 
-public interface Repository <T> {
+import domain.Movie;
+
+public interface Repository <T extends Movie,Client> {
 
 
 
