@@ -1,7 +1,7 @@
 package domain;
 
 public class Entity {
-   private int id ;
+    protected int id ;
 
 
     public Entity(int id) {

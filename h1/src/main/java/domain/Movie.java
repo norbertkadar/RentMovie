@@ -1,6 +1,6 @@
 package domain;
 
-public class Movie  extends Entity{
+public class Movie extends Entity{
      private String name;
      private int pret ;
      private String gen;

@@ -3,6 +3,7 @@ package repository;
 import domain.Movie;
 
 public class MovieRepo implements Repository {
+
     @Override
     public Movie findOne(Long id) {
         return null;
